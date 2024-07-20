@@ -1,8 +1,92 @@
 .attribution {
-    font-size: 11px;
+    font-size: 0.75rem;
+    /* 11px, using rem for responsiveness */
     text-align: center;
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    background-color: #D5E1EF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif; fallback: arial ;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.container {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.05);
+    max-width: 90%;
+    max-width: 288px;
+}
+
+img {
+    width: 100%;
+    height: 288px;
+    height: auto;
+    border-radius: 10px;
+    background: var(--color-blue-600, #2C7DFA);
+}
+
+h1 {
+    color: var(--color-slate-900, #1F314F);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* text-preset-1 */
+    font-family: 'Outfit', sans-serif; fallback: arial;
+    font-size: 1.375rem;
+    font-weight: 700;
+    line-height: 120%;
+    /* 26.4px */
+    text-wrap: break-word;
+}
+
+p {
+    color: var(--color-slate-500, #68778D);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+        /* text-preset-2 */
+    font-family: 'Outfit', sans-serif; fallback: arial;
+    font-size: var(--font-size-text-preset-2, 15px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 21px */
+    letter-spacing: 0.2px;
+}
+
+.text {
+    display: flex;
+    padding: 0px 16px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+}
+
+@media (orientation: landscape) and (max-width: 768px) {
+    .container {
+        flex-direction: row;
+        max-width: 90%;
+        /* Adjust max width */
+        padding: 16px;
+    }
 }
