@@ -1,6 +1,5 @@
 .attribution {
     font-size: 0.75rem;
-    /* 11px, using rem for responsiveness */
     text-align: center;
 }
 
@@ -51,24 +50,21 @@ h1 {
     color: var(--color-slate-900, #1F314F);
     text-align: center;
     font-feature-settings: 'clig' off, 'liga' off;
-    /* text-preset-1 */
 
     font-size: 1.375rem;
     font-weight: 700;
     line-height: 120%;
-    /* 26.4px */
 }
 
 p {
     color: var(--color-slate-500, #68778D);
     text-align: center;
     font-feature-settings: 'clig' off, 'liga' off;
-        /* text-preset-2 */
     
     font-size: var(--font-size-text-preset-2, 15px);
     font-style: normal;
     font-weight: 400;
-    line-height: 140%; /* 21px */
+    line-height: 140%; 
     letter-spacing: 0.2px;
 }
 
@@ -85,7 +81,6 @@ p {
     .container {
         flex-direction: row;
         max-width: 90%;
-        /* Adjust max width */
         padding: 16px;
     }
 }
